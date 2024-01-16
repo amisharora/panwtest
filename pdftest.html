@@ -25,13 +25,28 @@
 				clientId: "1ee5c6f0ee87496e9cd1ffc8673edf83",
 				divId: "adobe-dc-view",
 				reportSuiteId: "panw-dev",
-				measurementId : "G-KS2MELEEFC",
+				measurementId : "G-KS2MELEEFC"
 			});
+
 			adobeDCView.previewFile({
 				content:{location: {url: "https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
 				metaData:{fileName: "Bodea Brochure.pdf"}
 			}, {});
 		});
+
+		adobeDCView.registerCallback(
+        /* Type of call back */
+        AdobeDC.View.Enum.CallbackType.EVENT_LISTENER,
+        /* call back function */
+        function (event) {
+            console.log(event);
+        },
+        /* options to control the callback execution */
+        {
+            /* Enable PDF analytics events on user interaction. */
+            enablePDFAnalytics: true,
+        }
+    );
 	</script>
 </body>
 </html>
