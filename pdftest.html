@@ -8,16 +8,16 @@
 	<script src="//assets.adobedtm.com/9273d4aedcd2/0d76ae0322d7/launch-cc3e77767d1b-development.min.js" async></script>
 </head>
 <body>
-    <div id="adobe-dc-view"></div>
-<script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
-<script type="text/javascript">
-	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-		var adobeDCView = new AdobeDC.View({clientId: "7ee54cffd5c94fba8cc89c47a3fa7ef8", divId: "adobe-dc-view"});
-		adobeDCView.previewFile({
-			content:{location: {url: "https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
-			metaData:{fileName: "Bodea Brochure.pdf"}
-		}, {});
-	});
-</script>
+	<div id="adobe-dc-view"></div>
+	<script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
+	<script type="text/javascript">
+		document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+			var adobeDCView = new AdobeDC.View({clientId: "1ee5c6f0ee87496e9cd1ffc8673edf83", divId: "adobe-dc-view"});
+			adobeDCView.previewFile({
+				content:{location: {url: "https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
+				metaData:{fileName: "Bodea Brochure.pdf"}
+			}, {});
+		});
+	</script>
 </body>
 </html>
